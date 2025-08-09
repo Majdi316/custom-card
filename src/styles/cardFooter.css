@@ -1,0 +1,23 @@
+.cardFooter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+.cardFooter-email,.cardFooter-phone {
+  width: 50%;
+  display: flex;
+
+}
+.info{
+    margin-left: 10px;
+}
+@media (max-width: 600px) {
+    .cardFooter{
+        flex-direction: column;
+        gap: 15px;
+        justify-content: start;
+        align-items: start;
+    }
+}

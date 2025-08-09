@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap");
+/* Variables */
+:root {
+  --greenColor: #7cf03d;
+  --textColor: #e4e6c3;
+  --mainColor: #121113;
+  --secondaryColor: #1f242d;
+  --titleColor: #aaabc0;
+}
+body{
+  background: #ECDFCC;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.title h1 {
+  margin-top: 15px;
+  color: var(--secondaryColor);
+  position: relative;
+  font-size: 30px;
+  font-family: helvetica;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.title h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 110%;
+  left: 0;
+  background-color: var(--mainColor);
+}
+.title h1::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 3px;
+  top: calc(110% - 1px);
+  left: 0;
+  background-color: var(--mainColor);
+}

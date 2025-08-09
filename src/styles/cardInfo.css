@@ -1,0 +1,92 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: calc(100vw - 280px);
+  height: auto;
+  margin-bottom: 30px;
+}
+.wrapper-info {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.title {
+  text-align: center;
+}
+.image {
+  width: 100%;
+  height: 350px;
+  margin-top: 15px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+.createdAt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  border-radius: 15px;
+  margin-top: 5px;
+}
+.favorite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+.favorite span {
+  font-size: 25px;
+  margin-right: 7px;
+}
+.content {
+  margin-left: 15px;
+  font-weight: 500;
+}
+.errorMessage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.errorMessage p{
+  font-size: 22px;
+  font-weight: bold;
+}
+.errorMessage button{
+  width: 200px;
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper-info {
+    width: 100%;
+  }
+  .createdAt {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .image {
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
+  }
+}

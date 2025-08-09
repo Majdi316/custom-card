@@ -1,0 +1,46 @@
+.createNewCardWrapper {
+  width: 100%;
+}
+.createNewCardForm {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.createNewCardTowCols,
+.createNewCardThreeCols {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.createNewCardTowColsInfo {
+  width: 50%;
+}
+.createNewCardThreeColsInfo {
+  width: calc(100% / 3);
+}
+.submitButton {
+  margin-top: 20px;
+  outline: none;
+  width: 150px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+  .createNewCardTowCols,.createNewCardThreeCols {
+    flex-direction: column;
+  }
+  .createNewCardTowColsInfo,
+  .createNewCardThreeColsInfo {
+    width: 100%;
+  }
+  .submitButton {
+    width: 100%;
+  }
+}

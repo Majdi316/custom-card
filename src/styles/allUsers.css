@@ -1,0 +1,79 @@
+.allUsersWrapper {
+  width: 100%;
+}
+.allUsersWrapperInfo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.search {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.allUsersWrapper input {
+  width: 100%;
+  font-size: 18px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background: inherit;
+  box-shadow: 0 0 10px;
+  padding: 10px;
+}
+.allUsersWrapper input:focus {
+  border: 2px solid blue;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0;
+  box-shadow: 0 0 10px;
+  margin-top: 20px;
+}
+thead tr {
+  font-size: 1.15em;
+  height: 55px;
+}
+table tbody tr:hover{
+ box-shadow: 0 0 8px;
+ border: 2px solid black;
+}
+table td,
+table tr {
+  font-size: 1em;
+  padding: 1em;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+@media (max-width: 1200px) {
+  .allUsersWrapperInfo {
+    width: 100%;
+  }
+}
+@media (max-width: 1150px) {
+  table thead tr {
+    display: none;
+  }
+  table tr {
+    display: block;
+  }
+  table th,
+  table td {
+    padding: 0.5em;
+  }
+  table td {
+    text-align: right;
+    display: block;
+    font-size: 1em;
+    border: 1px solid black;
+  }
+  table td::before {
+    content: attr(data-title) " : ";
+    float: left;
+  }
+  .search {
+    width: 100%;
+  }
+}

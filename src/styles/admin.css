@@ -1,0 +1,88 @@
+.adminWrapper {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.adminWrapperInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.adminWrapperInfoUser,
+.adminWrapperInfoCard {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 0 10px black;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.adminWrapperInfoCard{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.adminWrapperInfoHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 15px;
+  border-radius: 50px;
+}
+.adminWrapperInfoHeader div {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.adminWrapperInfoBody {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+.adminWrapperInfoBodyDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 0 5px;
+  margin-bottom: 15px;
+  gap: 25px;
+}
+.adminWrapperInfoBodyDetails div {
+  width: 50%;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+}
+.adminWrapperInfoBodyDetails input {
+  background: inherit;
+}
+.adminWrapperInfoBodyDetails button:hover{
+    cursor: pointer;
+}
+.adminWrapperInfoBodyDetails input,
+.adminWrapperInfoBodyDetails button {
+  width: 100%;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 10px;
+  font-weight: bold;
+
+}
+@media (max-width: 600px) {
+  .adminWrapperInfoBodyDetails {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .adminWrapperInfoBodyDetails div {
+    width: 100%;
+    text-align: center;
+  }
+}

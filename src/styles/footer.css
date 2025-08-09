@@ -1,0 +1,34 @@
+.footerWrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footerWrapper a {
+  text-decoration: none;
+}
+.footerWrapperInfo {
+  width: 120px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px;
+  gap: 7px;
+  border-radius: 15px;
+}
+
+.footerWrapperInfo p {
+  text-transform: uppercase;
+}
+@media (max-width: 600px) {
+    .footerWrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
